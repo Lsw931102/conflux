@@ -26,18 +26,28 @@
         margin: 0 auto;
         background-color: #f8f8f8;
         padding: 30px;
+        border-radius: 30px;
+        cursor: move;
+      }
+      .swiper-container .swiper-button-next {
+        background-image:url("img/next.png");
+        background-position:-68px 0px;
+        background-size: 95px;
+        right: 50px;
+        cursor: pointer;
+      }
+      .swiper-container .swiper-button-prev {
+        background-image:url("img/next.png");
+        background-position:0px 0px;
+        background-size: 95px;
+        left: 50px;
+        cursor: pointer;
       }
       .swiper-slide {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #fff;
-      }
-      .swiper-button-prev {
-        left: 3px;
-      }
-      .swiper-button-next {
-        right: 3px;
       }
     </style>
 	</head>
@@ -275,16 +285,15 @@
         loop: true,
         slidesPerView: 2,
         spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        pagination : '.swiper-pagination',
+        paginationHide :true,
       });
-     
 		</script>
 	</body>
 
