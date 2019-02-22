@@ -162,23 +162,32 @@ li {
 .join_banner_nav {
 	clear: both;
 	width: 100%;
-	height: auto;
+	height: 250px;
 	position: relative;
+	display: flex;
+	flex-direction: row;
 }
 
-.join_banner {
+.join_banner_nav #img0 {
+	width: 20%;
 	height: auto;
-	width: 100%;
-	margin: 0 auto;
+	height: 250px;
+	cursor: pointer;
+}
+
+.join_banner_nav #img1 {
+	width: 20%;
+	height: auto;
 	position: absolute;
-	top: 30%;
-	left: 0%;
+	top: 0;
+	left: 20%;
+	height: 250px;
 }
 
-.join_banner_nav img {
-	width: 100%;
+.join_banner_nav #img2 {
+	width: 80%;
 	height: auto;
-	min-height: 120px;
+	height: 250px;
 }
 
 .join_banner h3 {
@@ -198,8 +207,40 @@ li {
 }
 
 .join_content {
-	margin: 0 auto;
+	margin-top: 50px;
 	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.join_content_texts{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+.jct-title{
+	width: 100%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #333;
+	margin-bottom: 50px;
+}
+
+.jct-text{
+	color: #333;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+.jct-title span,.jct-title label{
+	color: #ff0000;
+	margin-left: 10px;
+}
+
+.jct-title label{
+	cursor: pointer;
 }
 
 .profile {

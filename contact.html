@@ -11,13 +11,13 @@
 		<meta name="keywords" content="Conflux" />
 		<link href="" rel="shortcut icon" type="image/x-icon" />
 		<script src="https://app.foundersc.com/api/financial/h5/assets/xf_active/js/xf_fontsize.js"></script>
-		<link rel="stylesheet" href="css/Join Us.css" />
-		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/contact.css" />
 		<link rel="stylesheet" href="css/index_sy.css" />
-		<title>Join Us</title>
+		<title>Privacy Policy</title>
 	</head>
 
 	<body style="background-color: #f9fbff; font-family: helvetica;">
+		<div class="zgt"></div>
 
 		<div class="nav">
 				<div class="logo">
@@ -35,11 +35,11 @@
 							<a href="Team.html">TEAM</a>
 						</li>
 						<li>
-							<a style="color: #1a81ff;" href="Join Us.html">IoTex Voting</a>
+							<a href="Join Us.html">IoTex Voting</a>
 						</li>
 						</li>
 						<li>
-							<a href="contact.html">Contact</a>
+							<a style="color: #1a81ff;" href="contact.html">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -47,28 +47,24 @@
 					<span class="head-rights"><img src="img/tab.png"/></span>
 				</div>
 		</div>
-		<div class="join_banner_nav">
-			<img id="img0" src="img/votingBannerLogo.png" />
-			<img id="img1" src="img/votingBannerImg.png" />
-			<img id="img2" src="img/votingBanner.png" />
+
+		<div class="contact">
+			<div class="imgs">
+				<img id="erweima" src="img/erweima.png" />
+				<img id="tuite" src="img/tuite.png" />
+				<img id="fackbook" src="img/fackbook.png" />
+			</div>
+			<div class="inputs">
+				<div class="inputs-font">Contact</div>
+				<div class="inputs-input">
+					<input />
+					<div class="inputs-sub">Subscribe</div>
+				</div>
+			</div>
 		</div>
 
-		<div class="join_content">
-			<div class="join_content_texts">
-				<div class="jct-title">About<span>IoTex-SG</span></div>
-				<div class="jct-text">As one of the biggest  IoTeX‘s investors and  close support partners , we are very optimistic about the development and future of IoTeX.It's a great honor to compete for the BP validator. We will work with our team to build a better and safer IOT platform and strive to build with strong scalability, privacy, isolatability and developability for incubating new IoT applications and ecosystems.</div>
-			</div>
-
-			<div class="join_content_texts">
-				<div class="jct-title">What is<label id="textClick">IoTex</label></div>
-				<div class="jct-text">IoTeX is a blockchain 3.0 platform for the Internet of things. The IoTeX blockchain not only allows for massive scalability, but it provides IoT device manufacturers and dApps developers with a full-featured blockchain framework, supporting instant transactions, full privacy, smart contracts, and lightweight cryptography for low power devices.</div>
-			</div>
-	
-			<div class="join_content_texts">
-				<div class="jct-title">Vote for<span>IoTex-SG</span></div>
-				<div class="jct-text">IOSG has been a cornerstone partner of the IoTex team since the team was setup.IOSG will continue support the network and bring more possibilities to the ecology of IoTex.IOSG has assembled a strong team to provide security and realiablity network service.Vote for us and build together!</div>
-			</div>
-		</div>
+		<img id="gongzhonghao" src="img/gongzhonghao.jpg" />
+		<div id="bc"></div>
 
 		<div class="footer">
 				<p class="homebg"></p>
@@ -132,10 +128,119 @@
 				}
 
 			});
-			$("#textClick").click(function() {
-				location.href = 'https://iotex.io'
+			$("#erweima").click(function() {
+				$('#gongzhonghao').css({display: 'block',})
+				$('#bc').css({display: 'block',})
+			})
+			$("#bc").click(function() {
+				$('#gongzhonghao').css({display: 'none',})
+				$('#bc').css({display: 'none',})
+			})
+			$("#tuite").click(function() {
+				location.href = 'https://twitter.com/LeehomLin'
+				location.href = 'https://www.linkedin.com/company/14480831/admin/'
+			})
+			$("#fackbook").click(function() {
+				location.href = 'https://www.linkedin.com/company/14480831/admin/'
 			})
 		</script>
 	</body>
 
 </html>
+<style>
+	.contact{
+		width: 100%;
+		height: 39%;
+		position: relative;
+	}
+	.contact .inputs{
+		width: 30%;
+		height: 40px;
+		margin: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: row;
+	}
+	.inputs-font{
+		height: 40px;
+		line-height: 40px;
+		font-size: 18px;
+		font-weight: bold;
+		margin-right: 20px;
+	}
+	.inputs-input{
+		width: 100%;
+		position: relative;
+	}
+	.inputs-input input{
+		width: 100%;
+		height: 40px;
+		border-radius: 5px;
+		border: 1px solid #7f7f7f;
+		outline: none; 
+		outline: medium;
+		font-size: 18px;
+		padding-left: 5px;
+		padding-right: 105px;
+	}
+	.inputs-input .inputs-sub{
+		height: 40px;
+		width: 100px;
+		line-height: 40px;
+		text-align: center;
+		font-size: 18px;
+		color: #fff;
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: #4472c4;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	.imgs{
+		position: absolute;
+		right: 8%;
+		top: 0;
+		display: flex;
+		flex-direction: row;
+	}
+	.imgs img{
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+	#tuite,#fackbook{
+		width: 40px;
+    height: 40px;
+		margin-top: 5px;
+	}
+	#gongzhonghao{
+		margin: auto;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 30%;
+		height: 40%;
+		z-index: 10;
+		display: none;
+	}
+	#bc{
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9;
+		background: #000;
+		opacity: .7;
+		display: none;
+	}
+</style>

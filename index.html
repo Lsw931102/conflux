@@ -55,6 +55,37 @@
 			.visible-lg-block ul li:nth-child(2) img {
 				width: 0.4rem;
 			}
+			#banner_h1{
+				opacity: 0;
+				animation:myfirst 1s;
+				-moz-animation:myfirst 1s; /* Firefox */
+				-webkit-animation:myfirst 1s; /* Safari and Chrome */
+				-o-animation:myfirst 1s; /* Opera */
+				animation-fill-mode: forwards;
+			}
+			@keyframes myfirst
+			{
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+
+			@-moz-keyframes myfirst /* Firefox */
+			{
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+
+			@-webkit-keyframes myfirst /* Safari 和 Chrome */
+			{
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+
+			@-o-keyframes myfirst /* Opera */
+			{
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
 		</style>
 	</head>
 
@@ -88,19 +119,19 @@
 						</li> -->
 					</ul>
 					<!--<ul>
-                     <li>
-                         <a href="#">English</a>
-                     </li>
-                     <li>
-                         <a href="#">简体中文</a>
-                     </li>
-                     <li>
-                         <a href="#">한국어</a>
-                     </li>
-                     <li>
-                         <a href="join us.html">русский язык </a>
-                     </li>
-                 </ul>-->
+							<li>
+									<a href="#">English</a>
+							</li>
+							<li>
+									<a href="#">简体中文</a>
+							</li>
+							<li>
+									<a href="#">한국어</a>
+							</li>
+							<li>
+									<a href="join us.html">русский язык </a>
+							</li>
+					</ul>-->
 				</div>
 			</div>
 			</div>
