@@ -213,6 +213,13 @@ li {
 	flex-direction: row;
 	justify-content: space-around;
 }
+.join_content1 {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
 .join_content_texts{
 	width: 20%;
 	display: flex;
