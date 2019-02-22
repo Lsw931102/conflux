@@ -288,6 +288,10 @@ p, {
 	width: 30%;
 	display: inline-block;
 	float: left;
+	width: 150px;
+	height: 260px;
+	border-radius: 50%;
+	overflow: hidden;
 }
 
 .founder_left img {
@@ -301,6 +305,7 @@ p, {
 	float: left;
 	padding-left: 3%;
 	overflow: hidden;
+	text-align: center;
 }
 
 .founder_right h3 {
@@ -539,11 +544,23 @@ p, {
 .teamClickLeft {
 	width: 380px;
 	height: 100%;
+	position: relative;
 }
-
-.teamClickLeft img {
+.teamClickLeft .imgs{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.teamClickLeft .imgs img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .teamClickRight {
@@ -584,6 +601,9 @@ p, {
 }
 .tcr_bottom .tcrb_ul{
 	color: #555555 !important;
+}
+.tcr_bottom .tcrb_ul li{
+	list-style-type: disc;
 }
 
 
