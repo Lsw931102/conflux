@@ -561,6 +561,7 @@ p, {
 .teamClickLeft .imgs img {
 	width: 100%;
 	height: auto;
+	margin-left: 0 !important
 }
 
 .teamClickRight {
@@ -604,6 +605,7 @@ p, {
 }
 .tcr_bottom .tcrb_ul li{
 	list-style-type: disc;
+	color: #333 !important;
 }
 
 

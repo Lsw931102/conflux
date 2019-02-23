@@ -838,6 +838,11 @@
         	clickable :true,
 				},
       });
+			// a标签滑动到某个锚点动画效果
+			$("a").click(function () {
+			    $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top -20+ "px"}, 500);
+			    return false;
+			});
 			//PC端人员点击事件
 			$('.founder').on('click', (e) => {
 				let id = e.currentTarget.id.substring(4, e.currentTarget.id.length)
