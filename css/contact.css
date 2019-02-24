@@ -576,18 +576,18 @@ li {
 }
 #gongzhonghao{
 	margin: auto;
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	width: 30%;
-	height: 50%;
+	width: 300px;
+	height: 300px;
 	z-index: 10;
 	display: none;
 }
 #bc{
-	position: fixed;
+	position: absolute;
 	right: 0;
 	top: 0;
 	width: 100%;
