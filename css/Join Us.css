@@ -166,8 +166,12 @@ li {
 	position: relative;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+  align-items: center;
 }
-
+.join_banner_nav .imgs_imgs {
+	margin-right: 50px;
+}
 .join_banner_nav #img0 {
 	width: 20%;
 	height: auto;
@@ -190,7 +194,7 @@ li {
 	height: 250px;
 }
 .join_banner_nav img {
-	height: 100% !important;
+	/* height: 100% !important; */
 }
 
 .join_banner h3 {

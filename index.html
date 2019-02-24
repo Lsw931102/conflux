@@ -750,10 +750,14 @@
 								<div style="height: 100%">
 									<div class="join_banner_nav">
 										<img id="img0" src="img/votingBannerLogo.png" />
-										<!-- <img id="img1" src="img/votingBannerImg.png" /> -->
-										<!-- <img id="img2" src="img/votingBanner.png" /> -->
+										<div class="imgs_imgs">
+											<img id="erweima2" class="erweima" src="img/weixin.png" />
+											<img id="tuite" src="img/teite.png" />
+											<img id="fackbook" src="img/lingying.png" />
+										</div>
 									</div>
-							
+									<img id="gongzhonghao2" src="img/gongzhonghao.jpg" />
+									<div id="bc2"></div>
 									<div class="join_content">
 										<div class="join_content_texts">
 											<div class="jct-title">About<span>IoTex-SG(IOSG)</span></div>
@@ -779,7 +783,7 @@
 									<div class="imgs">
 										<div class="contact_logo">IOSG</div>
 										<div class="imgs_imgs">
-											<img id="erweima" src="img/weixin.png" />
+											<img id="erweima" class="erweima" src="img/weixin.png" />
 											<img id="tuite" src="img/teite.png" />
 											<img id="fackbook" src="img/lingying.png" />
 										</div>
@@ -957,9 +961,17 @@
 				$('#gongzhonghao').css({display: 'block',})
 				$('#bc').css({display: 'block',})
 			})
+			$("#erweima2").click(function() {
+				$('#gongzhonghao2').css({display: 'block',})
+				$('#bc2').css({display: 'block',})
+			})
 			$("#bc").click(function() {
 				$('#gongzhonghao').css({display: 'none',})
 				$('#bc').css({display: 'none',})
+			})
+			$("#bc2").click(function() {
+				$('#gongzhonghao2').css({display: 'none',})
+				$('#bc2').css({display: 'none',})
 			})
 			$("#tuite").click(function() {
 				location.href = 'https://twitter.com/LeehomLin'
