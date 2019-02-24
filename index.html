@@ -302,7 +302,7 @@
 							<div class="window-back swiper-lazy" data-title="<img src='img/mouse.png'>" style="display: flex;flex-direction: column;justify-content: center;">
 								<div class="join_content1">
 									<div class="profile">
-										<h3>Stable Coin</h3>
+										<div class="titles">Stable Coin</div>
 										<div class="pro">
 											<div class="swiper-container" id="swiper1">
 												<div class="swiper-wrapper">
@@ -315,14 +315,11 @@
 												</div>
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
-												<!-- Add Arrows -->
-												<div class="swiper-button-next"></div>
-												<div class="swiper-button-prev"></div>
 											</div>
 										</div>
 									</div>
 									<div class="profile">
-										<h3>Financial Services</h3>
+										<div class="titles">Financial Services</div>
 										<div class="pro">
 											<div class="swiper-container" id="swiper2">
 												<div class="swiper-wrapper">
@@ -338,14 +335,11 @@
 												</div>
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
-												<!-- Add Arrows -->
-												<div class="swiper-button-next"></div>
-												<div class="swiper-button-prev"></div>
 											</div>
 										</div>
 									</div>
 									<div class="profile">
-										<h3>Application Layer</h3>
+										<div class="titles">Application Layer</div>
 										<div class="pro">
 											<div class="swiper-container" id="swiper3">
 												<div class="swiper-wrapper">
@@ -376,14 +370,11 @@
 												</div>
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
-												<!-- Add Arrows -->
-												<div class="swiper-button-next"></div>
-												<div class="swiper-button-prev"></div>
 											</div>
 										</div>
 									</div>
 									<div class="profile">
-										<h3>Exchange</h3>
+										<div class="titles">Exchange</div>
 										<div class="pro">
 											<div class="swiper-container" id="swiper4">
 												<div class="swiper-wrapper">
@@ -402,14 +393,11 @@
 												</div>
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
-												<!-- Add Arrows -->
-												<div class="swiper-button-next"></div>
-												<div class="swiper-button-prev"></div>
 											</div>
 										</div>
 									</div>
 									<div class="profile">
-										<h3>Protocol Layer</h3>
+										<div class="titles">Protocol Layer</div>
 										<div class="pro">
 											<div class="swiper-container" id="swiper5">
 												<div class="swiper-wrapper">
@@ -437,14 +425,11 @@
 												</div>
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
-												<!-- Add Arrows -->
-												<div class="swiper-button-next"></div>
-												<div class="swiper-button-prev"></div>
 											</div>
 										</div>
 									</div>
 									<div class="profile">
-										<h3>Infrasturcture Layer</h3>
+										<div class="titles">Infrasturcture Layer</div>
 										<div class="pro">
 											<div class="swiper-container" id="swiper6">
 												<div class="swiper-wrapper">
@@ -475,9 +460,6 @@
 												</div>
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
-												<!-- Add Arrows -->
-												<div class="swiper-button-next"></div>
-												<div class="swiper-button-prev"></div>
 											</div>
 										</div>
 									</div>
@@ -837,13 +819,11 @@
 			// swiper初始化
 			var swiper = new Swiper('.swiper-container', {
 				loop: true,
+				autoplay : 3000,
+        speed: 300,
 				initialSlide :0,
         slidesPerView: 2,
         spaceBetween: 30,
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
 				pagination : '.swiper-pagination',
 				paginationClickable: true
       });
