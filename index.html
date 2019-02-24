@@ -210,13 +210,13 @@
 				<div class="window-box">
 					<div class="window-cut">
 						<div class="window-bin" data-hash="first" id="first">
-							<!-- <div class="window-head">
+							<div class="window-head">
 								<div class="visible-lg-block">
 									<ul class="swiper-pagination-clickable swiper-pagination-bullets">
 
 									</ul>
 								</div>
-							</div> -->
+							</div>
 							<div class="window-back swiper-lazy" data-title="1">
 								<div class="banner">
 									<div class="nav">
@@ -250,19 +250,19 @@
 											<p><img src="img/home_bg.png" /></p>
 											<ul class="tab_ul">
 												<li>
-													<a class="top_href" href="#first">HOME</a>
+													<a class="top_href">HOME</a>
 												</li>
 												<li>
-													<a class="top_href" href="#two">Portfolio</a>
+													<a class="top_href two">Portfolio</a>
 												</li>
 												<li>
-													<a class="top_href" href="#three">TEAM</a>
+													<a class="top_href three">TEAM</a>
 												</li>
 												<li>
-													<a class="top_href" href="#four">IoTex Voting</a>
+													<a class="top_href four">IoTex Voting</a>
 												</li>
 												<li>
-													<a class="top_href" href="#five">Contact</a>
+													<a class="top_href five">Contact</a>
 												</li>
 												<!--<li class="li_yuyan">
                                     <div class="select">
@@ -838,12 +838,15 @@
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				},
-				pagination: {
-					el: '.swiper-pagination',
-        	clickable :true,
-				},
+				pagination : '.swiper-pagination',
+				paginationClickable: true
       });
-
+			// a标签滑动到某个锚点动画效果
+			// $(".top_href").click(function () {
+			// 	console.log($($(this).attr("href")).offset())
+			//     // $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top -20+ "px"}, 500);
+			//     // return false;
+			// });
 			var footer_height = $(".footer").height();
 			$("#six2").css({
 				"height": footer_height,
@@ -881,6 +884,9 @@
 				$(".drop").hide();
 			});
 			//点击跳到对应的图片
+			$('.two').click(function() {
+				$(".visible-lg-block ul li:nth-child(2)").click();
+			});
 			$('.three').click(function() {
 				$(".visible-lg-block ul li:nth-child(3)").click();
 			});
