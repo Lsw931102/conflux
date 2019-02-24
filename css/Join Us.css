@@ -247,7 +247,7 @@ li {
 	left: 0;
 	top: 10px;
 	width: 4px;
-	height: 22px;
+	height: 25px;
 	background: #1a81ff;
 }
 
@@ -256,7 +256,7 @@ li {
 	font-size: 20px;
 	padding: 0 20px;
 	height: 400px;
-	background: #dad7d7;
+	background: #f8f8f8;
 }
 
 .jct-title span,.jct-title label{
