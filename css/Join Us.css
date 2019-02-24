@@ -171,6 +171,11 @@ li {
 }
 .join_banner_nav .imgs_imgs {
 	margin-right: 50px;
+	display: flex;
+	align-items: center;
+}
+.join_banner_nav .imgs_imgs img {
+	cursor: pointer;
 }
 .join_banner_nav #img0 {
 	width: 20%;
