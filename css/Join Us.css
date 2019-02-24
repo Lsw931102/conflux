@@ -189,6 +189,9 @@ li {
 	height: auto;
 	height: 250px;
 }
+.join_banner_nav img {
+	height: 100% !important;
+}
 
 .join_banner h3 {
 	font-size: 0.8rem;
