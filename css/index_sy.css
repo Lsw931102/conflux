@@ -14371,7 +14371,12 @@ nav{width:100%; position:fixed; top:0; left:0; z-index:999999; background:#fff;
     .navbar-nav .open .dropdown-menu>li>a{line-height:50px; border-bottom:1px dotted #f2f2f2;} }
 
 
-.window-bin{height:100%; background: #f9fbff; min-height: 600px;}
+.window-bin{
+    height:100%; 
+    background: #f9fbff; 
+    /* min-height: 600px; */
+    /* min-height: 100%; */
+}
 .window-bin.foot,
 footer{height:auto; padding:15px 60px; line-height:30px; background:#393939; color:#eee; text-align:center; border:none !important;}
 .window-bin.foot a,

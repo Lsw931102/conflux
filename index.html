@@ -14,17 +14,10 @@
 		<script src="js/xf_fontsize.js"></script>
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/index_sy.css" />
-		<!--[if IE 9]>
-    <link rel="stylesheet" href="https://show.metinfo.cn/muban/M1156008/328/templates/M1156008/cache/metinfo-ie9-1.css">
-    <link rel="stylesheet" href="https://show.metinfo.cn/muban/M1156008/328/templates/M1156008/cache/metinfo-ie9-2.css">
-    <link rel="stylesheet" href="https://show.metinfo.cn/muban/M1156008/328/templates/M1156008/cache/metinfo-ie9-3.css">
-    <link rel="stylesheet" href="https://show.metinfo.cn/muban/M1156008/328/templates/M1156008/cache/metinfo-ie9-4.css">
-    <![endif]-->
-		<!--[if lt IE 10]>
-    <script src="https://show.metinfo.cn/muban/M1156008/328/app/system/include/static/vendor/media-match/media.match.min.js"></script>
-    <script src="https://show.metinfo.cn/muban/M1156008/328/app/system/include/static/vendor/respond/respond.min.js"></script>
-    <script src="https://show.metinfo.cn/muban/M1156008/328/app/system/include/static/js/classList.min.js"></script>
-    <![endif]-->
+		<link rel="stylesheet" href="css/Join Us.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+		<link rel="stylesheet" href="css/Team.css" />
+		<link rel="stylesheet" href="css/Join Us.css" />
 		<style>
 			.window-head {
 				top: 87%;
@@ -85,6 +78,62 @@
 			{
 				from {opacity: 0;}
 				to {opacity: 1;}
+			}
+			h3 {
+        margin-bottom: 50px;
+			}
+			.join_content1{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				padding: 0 50px;
+				box-sizing: border-box;
+			}
+			.profile{
+				width: 32%;
+				padding: 0;
+			}
+			.profile .pro{
+				width: 100%;
+				height: 200px;
+			}
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+				cursor: move;
+			}
+			.swiper-wrapper{
+				padding: 0 1%;
+			}
+      .swiper-container .swiper-button-next {
+        background-image:url("img/next.png");
+        background-position:-25px 6px;
+        background-size: 50px;
+        right: 5px;
+        cursor: pointer;
+      }
+      .swiper-container .swiper-button-prev {
+        background-image:url("img/next.png");
+        background-position:0px 6px;
+        background-size: 50px;
+        left: 5px;
+        cursor: pointer;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+				background-color: #fff;
+				margin-right: 2% !important;
+				width: 48% !important;
+				padding: 0 5px;
+			}
+			.swiper-slide img{
+				max-width: 100px;
 			}
 		</style>
 	</head>
@@ -151,7 +200,7 @@
 							<div class="window-back swiper-lazy" data-title="1">
 								<div class="banner">
 									<div class="nav">
-										<div class="logo">
+										<div class="logo" style="margin: 0">
 											<div class="logo_tit">
 												<span><a href="/" class="logo_tu"><img src="img/logo.png" id="logo" /></a></span>
 												<span class="head-rights"><img src="img/tab.png"/></span>
@@ -177,7 +226,7 @@
 											</div>
 
 										</div>
-										<div class="tab">
+										<div class="tab" style="margin: 0">
 											<p><img src="img/home_bg.png" /></p>
 											<ul class="tab_ul">
 												<li>
@@ -228,87 +277,490 @@
 								</div>
 							</div>
 						</div>
-						<!-- <div class="window-bin" data-hash="two">
+						<div class="window-bin" data-hash="two">
 							<div class="window-back swiper-lazy" data-title="<img src='img/mouse.png'>">
-								<div class="challenges">
-									<p class="chang_tu"><img src="img/challenges.gif" /> </p>
-									<ul class="cha_ul">
-										<li class="three">
-											<div class="challenges_left" align="right">
-												<img src="img/left_dash.png"><br>
-												<img src="img/dot.png" class="dot_1"><br>
-												<img src="img/Scalability.png" class="dot_2">
-												<h3>Scalability</h3>
-												<p>How to process more transactions <br/>on the chain?</p>
-												<a><img src="img/arrow-2.png"></a>
+								<div class="join_content1">
+									<div class="profile">
+										<h3>Stable Coin</h3>
+										<div class="pro">
+											<div class="swiper-container" id="swiper1">
+												<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<img src="./img/portfolio/StableCoin/pic1.png"/>
+														</div>
+														<div class="swiper-slide">
+															<img src="./img/portfolio/StableCoin/pic2.png"/>
+														</div>
+												</div>
+												<!-- Add Pagination -->
+												<div class="swiper-pagination"></div>
+												<!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
 											</div>
-										</li>
-										<li class="five">
-											<div class="challenges_center" align="center">
-												<img src="img/center_dash.png"><br>
-												<img src="img/dot.png"><br>
-												<img src="img/Extensibility.png" class="dot_2" style="left: 0">
-												<h3>Extensibility</h3>
-												<p>How to bring information onto the chain?</p>
-												<a><img src="img/arrow-2.png"></a>
+										</div>
+									</div>
+									<div class="profile">
+										<h3>Financial Services</h3>
+										<div class="pro">
+											<div class="swiper-container" id="swiper2">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="./img/portfolio/FinancialServices/pic1.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/FinancialServices/pic2.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/FinancialServices/pic3.png"/>
+													</div>
+												</div>
+												<!-- Add Pagination -->
+												<div class="swiper-pagination"></div>
+												<!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
 											</div>
-										</li>
-										<li class="four">
-											<div class="challenges_right" align="left">
-												<img src="img/right_dash.png"><br>
-												<img src="img/dot.png" class="dot"><br>
-												<img src="img/Security.png" class="dot_3">
-												<h3 style="padding-left: 0.1rem; text-align: left">Security</h3>
-												<p style="padding-left: 0.1rem; text-align: left">How to ensure the security of digital <br/>assets in smart contracts?</p>
-												<a><img src="img/arrow-2.png" style="margin-left: 0.3rem"></a>
+										</div>
+									</div>
+									<div class="profile">
+										<h3>Application Layer</h3>
+										<div class="pro">
+											<div class="swiper-container" id="swiper3">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ApplicationLayer/pic1.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ApplicationLayer/pic2.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ApplicationLayer/pic3.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ApplicationLayer/pic4.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ApplicationLayer/pic5.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ApplicationLayer/pic6.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ApplicationLayer/pic7.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ApplicationLayer/pic8.png"/>
+													</div>
+												</div>
+												<!-- Add Pagination -->
+												<div class="swiper-pagination"></div>
+												<!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
 											</div>
-										</li>
-									</ul>
+										</div>
+									</div>
+									<div class="profile">
+										<h3>Exchange</h3>
+										<div class="pro">
+											<div class="swiper-container" id="swiper4">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="./img/portfolio/Exchange/pic1.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/Exchange/pic2.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/Exchange/pic3.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/Exchange/pic4.png"/>
+													</div>
+												</div>
+												<!-- Add Pagination -->
+												<div class="swiper-pagination"></div>
+												<!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
+											</div>
+										</div>
+									</div>
+									<div class="profile">
+										<h3>Protocol Layer</h3>
+										<div class="pro">
+											<div class="swiper-container" id="swiper5">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ProtocolLayer/pic1.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ProtocolLayer/pic2.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ProtocolLayer/pic3.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ProtocolLayer/pic4.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ProtocolLayer/pic5.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ProtocolLayer/pic6.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/ProtocolLayer/pic7.png"/>
+													</div>
+												</div>
+												<!-- Add Pagination -->
+												<div class="swiper-pagination"></div>
+												<!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
+											</div>
+										</div>
+									</div>
+									<div class="profile">
+										<h3>Infrasturcture Layer</h3>
+										<div class="pro">
+											<div class="swiper-container" id="swiper6">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="./img/portfolio/infrastructure/pic1.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/infrastructure/pic2.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/infrastructure/pic3.png"/>
+													</div>
+													<div class="swiper-slide">
+														<svg style="width: 200px; height: 200px;" version="1.1" width="2500" height="2500" viewBox="0 0 1270.35 2000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><g fill="#1A6896"><path d=" M 933.19 393.92 L 918.96 503.04 L 1000.63 571.47 L 1146.34 520.39 L 1048.63 439.3 L 999.68 346.19 L 738.42 96.5 L 808.11 273.72 L 933.19 393.92"/><path d=" M 744.18 450.74 L 728.02 547.63 L 543.82 679.88 L 561.96 895.2 L 701.35 1250.17 L 780.31 1107.27 L 754.7 1067.69 L 830.72 883.77 L 830.72 789.76 L 975.31 592.42 L 884.63 516.44 L 899.05 405.91 L 780.62 292.12 L 680.51 39.87 L 673.45 36.03 L 674.41 270.32 L 744.18 450.74"/><path d=" M 1111.9 1087.52 L 1126.22 1062.44 L 1126.22 872.64 L 1159.03 550.19 L 1007.37 603.34 L 863.04 800.33 L 863.04 890.16 L 791.05 1064.37 L 808.31 1091.06 L 1087.99 1110.7 L 1111.9 1087.52 M 663.04 1536.38 L 707.22 1557.85 L 740.64 1520.85 L 838.53 1506.51 L 875.54 1456.37 L 959.1 1454 L 963.88 1428.92 L 1046.23 1413.42 L 1071.02 1141.9 L 808.29 1123.45 L 713.58 1294.81 L 621.32 1544.02 L 630.82 1590.09 L 663.04 1536.38 M 438.48 1147.07 L 193.46 1254.74 L 199.87 1409.03 L 303.73 1461.16 L 328.79 1502.94 L 381.32 1475.48 L 412.35 1485.03 L 421.91 1459.98 L 443.4 1451.61 L 510.25 1477.88 L 535.31 1539.96 L 589.03 1514.88 L 597.65 1514.88 L 681.56 1288.22 L 544.19 938.35 L 438.48 1147.07"/><path d=" M 154.51 1161.53 L 175 1227.56 L 414.88 1122.13 L 529.57 895.68 L 511.76 684.1 L 57.73 535.05 L 162.87 1081.54 L 154.51 1161.53 M 698.34 529.16 L 710.85 454.15 L 642.13 276.43 L 640.99 1 L 620.08 0 L 595 11.94 L 67.7 504.31 L 524.2 654.18 L 698.34 529.16 Z M 1190.64 1380 L 1098.7 1336.41 L 1092.45 1404.98 L 1120.24 1418.16 L 1003.68 1498 L 874.1 1601.59 L 737.18 1637 L 626.11 1695.4 L 487.28 1644.06 L 238.88 1502.7 L 134.33 1417.49 L 154.63 1409.98 L 151.81 1342.12 L 64.81 1374.25 L -0.04 1496.91 L 10.96 1712.11 L 144.96 1769.75 L 165.94 1786 L 442.01 1921 L 465.09 1924.48 L 596.74 1996.94 L 665.59 2000.07 L 756.29 1952.12 L 1040.94 1817.55 L 1253.56 1700.92 L 1270.36 1512.06 M 626.58 1869.54 L 626.58 1933.54 L 614.72 1933 L 486.18 1862.21 L 461.51 1858.49 L 200.41 1730.86 L 178.28 1713.65 L 73.58 1668.65 L 65.52 1511.39 L 105.52 1435.7 L 220.52 1529.49 L 472.38 1672.81 L 613.57 1725.25 L 641.21 1836.9 M 1192.25 1660.78 L 1012.45 1759.46 L 728.03 1893.93 L 658.91 1930.44 L 658.91 1876.44 L 675.29 1839.91 L 645.96 1721.43 L 748.88 1667.32 L 888.88 1631.11 L 1022.42 1524.28 L 1149.66 1437.17 L 1204.12 1527.31"/></g></svg>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/infrastructure/pic5.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/infrastructure/pic6.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/infrastructure/pic7.png"/>
+													</div>
+													<div class="swiper-slide">
+														<img src="./img/portfolio/infrastructure/pic8.png"/>
+													</div>
+												</div>
+												<!-- Add Pagination -->
+												<div class="swiper-pagination"></div>
+												<!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="window-bin" data-hash="three">
 							<div class="window-back swiper-lazy" data-title="3">
-								<div class="scalability">
-									<div class="sca_right">
-										<hr align="left" style="height:6px; width:50px;border:none;background:  #1a81ff;">
-										<h3>Scalability</h3>
-										<p class="text_p1">How to process more transactions on the chain?</p>
-										<p class="text_p2">· A scalable consensus algorithm – direct acyclic graphs(DAG)</p>
-										<p class="text_p2">· All fork blocks in Conflux contribute to the throughput</p>
-										<p class="text_p2">· Achieved 3000 – 6000 TPS in the internal test-net with up to 20k full nodes</p>
+								<!-- 人物列表 -->
+								<div class="team_content">
+									<div class="titles">Core</div>
+									<div id="team1" class="founder">
+										<div class="founder_left"><img src="img/Fan Long_small.png"></div>
+										<div class="founder_right">
+											<h3>Jocy Lin</h3>
+											<span>Co-Founder & Managing Director</span>
+											<p>Fan Long, an Assistant Professor at University of Toronto. He graduated from Tsinghua University Yao Class, and he holds PhD of Computer Science from MIT. His research interests include systems security, programming language, and blockchain. He is a recipient of ACM SIGSOFT Outstanding Dissertation Award and MIT Best Dissertation Award. He has more than 20 publications on top computer science conferences with more than 1000 citations. He was also a competitive programmer. He won gold medals twice in International Olympiad of Informatics (2005, 2006), and ACM-ICPC Program Contest regional championship.</p>
+										</div>
 									</div>
-									<div class="sca_left">
-										<img src="img/DAG_bg.png">
-										<img class="sl_img2" src="img/DAG-Animation.gif">
+									<div id="team2" class="founder">
+										<div class="founder_left"><img src="img/Andrew_small.jpg"></div>
+										<div class="founder_right">
+											<h3>Dr  Liang</h3>
+											<span>Co-Founder & Managing Director</span>
+											<p>Professor Yao is a world-renowned computer scientist. He is recipient of the Turing Award in 2000 for his fundamental contributions to the theory of computation, including the complexity-based theory of pseudorandom number generation, cryptography, and communication complexity. He is an academician of the Chinese Academy of Sciences, a foreign member of the US National Academy of Sciences. He is a Professor and Dean of the Institute for Interdisciplinary Information Sciences at Tsinghua University. Andrew is the Chief Scientist of the Conflux Chain Foundation and will lead the theoretical design of the Conflux protocol.</p>
+										</div>
+									</div>
+									<div id="team3" class="founder">
+										<div class="founder_left"><img src="img/Wei Xu_small.jpg"></div>
+										<div class="founder_right">
+											<h3>JiaPing  Wang</h3>
+											<span>Chief Strategic Officer & Advisor</span>
+											<p>Wei Xu, Assistant Professor and Assistant Dean of the Institute of Interdisciplinary Information Science(IIIS), Tsinghua University. He is also the Associate Dean of the Institute of Financial Technology of Tsinghua University and Director of the Blockchain Research Center. Professor Wei Xu’s research interests focus on cross-disciplinary research in distributed systems and machine learning. He obtained his Master and and Ph.D. degree in Computer Science from University of California, Berkeley. He was advised by Professor David Patterson, winner of the 2017 Turing Award. He holds a bachelor's degree in computer science from the University of Pennsylvania (he also spent two years in the Department of Computer Science at Tsinghua University). He has won Faculty Research Awards from Google and IBM, Graduate Student Advising Award and Top-Performance Employee Award from Tsinghua University, and Beijing Teaching Pioneer Award. He has published more than 40 papers in top conferences in systems, networks, machine learning, and optical communications, etc. He won the DSN, APSys Best Paper Award. Prior to joining Tsinghua, he worked at Google headquarters and was responsible for R&D in infrastructure reliability.</p>
+										</div>
+									</div>
+									<div class="titles">advisor</div>
+									<div id="team4" class="founder">
+										<div class="founder_left"><img src="img/Ming Wu_small.jpg"></div>
+										<div class="founder_right">
+											<h3>Emin Gün Sirer</h3>
+											<span>Cornell professor</span>
+											<p>Ming Wu is the founding member of Conflux. Before joining the Conflux Team, Ming was a senior researcher at Systems Research Group in Microsoft Research Asia. He has extensive expertise in the design and implementation of distributed systems. He designed and implemented the large-scale and highly efficient distributed machine learning systems which were applied in Microsoft products. Dr. Ming Wu graduated from University of Science and Technology of China, and he obtained a Ph.D. in computer science from the Institute of Computing Technology of the Chinese Academy of Sciences in 2007. Later in 2007, he joined Microsoft Research Asia. His main research interests and research directions involves distributed transaction processing systems, graph computing engines and artificial intelligence platforms. Dr. Ming Wu has published many papers top conference in computer system and various fields, such as SOSP, OSDI, NSDI, ATC, EuroSys, SoCC, VLDB, etc. He has also served as Committee Member of OSDI, ASPLOS, HotDep, and MiddleWare, and he is the publication Chair of SOSP'17.</p>
+										</div>
+									</div>
+									<div id="team5" class="founder">
+										<div class="founder_left"><img src="img/Matt Chow_small.png"></div>
+										<div class="founder_right">
+											<h3>Andy Bromberg</h3>
+											<span>Coinlist Co-founder</span>
+											<p>Matt Chow graduated from Tsinghua University Yao Class, and he is a Ph.D candidate of computer science in Carnegie Mellon University. His research interests include networking, systems, and blockchain. Matt was a system architect at Hudson River Trading, an industry-leading automated trading firm, where he designed and optimized the infrastructures for large scale high-frequency trading. He was a competitive programmer who won gold medal in International Olympiad of Informatics, and regional championship in ACM-ICPC competition Program Contest.</p>
+										</div>
+									</div>
+									<div id="team6" class="founder">
+										<div class="founder_left"><img src="img/Zhe Yang_small.png"></div>
+										<div class="founder_right">
+											<h3>Prof. Parteek Saxena</h3>
+											<span>Singapore National Univeristy</span>
+											<p>Zhe Yang graduated from Tsinghua University (he once studied at Yao Class, and later graduated from Department of Mathematics), and he published a paper at top computer theory conference CRYPTO when he was still a senior student at Tsinghua. After graduating from Tsinghua, Zhe worked at Hulu, Face++, and Google, and has extensive experience in P2P streaming, AI, CDN, and Engineering Productivity. Zhe Yang won the gold medal in the National Olympiad of Informatics.</div>
+									</div>
+									<div id="team7" class="founder">
+										<div class="founder_left"><img src="img/Yanpei Liu_small.jpg"></div>
+										<div class="founder_right">
+											<h3>Jehan Chu</h3>
+											<span>Kenetic Founder</span>
+											<p>Yanpei Liu graduated from the ACM class of Shanghai Jiaotong University. Prior to join the Conflux team, he was an analyst at Sequoia Capital, where he was responsible for the analysis and investment of technology portfolios. Yanpei is an excellent programmer. He has won the ACM-ICPC Program Contest Regional Championship and the World Finals Gold Medal (2nd place) , and he has won World Finals of the Code Jam Programming Contest.</p>
+										</div>
+									</div>
+									<div id="team8" class="founder">
+										<div class="founder_left"><img src="img/Chenxing Li_small.png"></div>
+										<div class="founder_right">
+											<h3>BeenHero</h3>
+											<span>Imtoken Founder</span>
+											<p>Chenxing Li graduated from Yao Class, Tsinghua University. He is currently a Ph.D. student at the Institute of Interdisciplinary Information at Tsinghua University, advised by professor Andrew Yao. Chenxing's research interests include: applied cryptography and blockchain consensus algorithm. He has won the third prize of Yao Chi-Chih Scholarship and the gold medal of the National Mathematical Olympiad.</p>
+										</div>
+									</div>
+									<div id="team9" class="founder">
+										<div class="founder_left"><img src="img/Peilun Li_small.jpg"></div>
+										<div class="founder_right">
+											<h3>Max Zhang</h3>
+											<span>360 Director</span>
+											<p>Peilun Li graduated from Yao Class, Tsinghua University. He is currently a Ph.D. student at the Institute of Interdisciplinary Information at Tsinghua University. Peilun's research interests include distributed systems and blockchain consensus algorithms. He has won first class award in the regional physics competition.</p>
+										</div>
 									</div>
 								</div>
+						
+								<!-- 点击人物放大(仅PC端有效) -->
+								<div id="teamClick1" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+										<div class="imgs">
+											<img src="img/Fan Long_big.png">
+										</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">Jocy Lin</span>
+											<span class="tt_bottom">Co-Founder & Managing Director</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>Conflux Advisor、IoTeX Advisor</li>
+												<li>Has successfully led investment in projects such as Vechain, Lisk，Ada，Imtoken, and IPFS supporter.</li>
+												<li>Has over five years of experience in the blockchain industry .</li>
+												<li>Used to be the chief analyst of TMT at Hongyuan Securities Research Institute,</li>
+												<li>Named VP in the Top 10 USD funds and has rich experiences in TMT investment area.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="teamClick2" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+											<div class="imgs">
+												<img src="img/Andrew_big.jpg">
+											</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">Dr  Liang</span>
+											<span class="tt_bottom">Co-Founder & Managing Director</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>Head of the well-known Hong Kong hedge fund</li>
+												<li>Former CTO and founding partner of Maobi Information Technology (a global mobile video chat Leading Enterprise distributed in more than 200 countries and regions, more than 60 million users),</li>
+												<li>Ph.D., Department of Electrical Engineering, Stanford University,</li>
+												<li>HP Labs, Director of Technology R&D, Qualcomm</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="teamClick3" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+											<div class="imgs">
+												<img src="img/Wei Xu_big.jpg">
+											</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">JiaPing  Wang</span>
+											<span class="tt_bottom">Chief Strategic Officer & Advisor</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>strong post-investment management capability, currently focusing on infrastructure and ecological application</li>
+												<li>strong post-investment management capability, currently focusing on infrastructure and ecological application</li>
+												<li>Executive director of Sinovation Ventures focus on blockchain and AI sectors, one of three major investors in the first institutional round of Bitmain.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="teamClick4" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+											<div class="imgs">
+												<img src="img/Ming Wu_big.jpg">
+											</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">Emin Gün Sirer</span>
+											<span class="tt_bottom">Cornell professor</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>Co-director of initc3.org.</li>
+												<li>Co-founder of bloXroute.</li>
+												<li>He is a crypto doyen,He invented Bitcoin-NG to sidestep the maximum block size debate,</li>
+												<li>He identified multiple flaws in The DAO</li>
+												<li>He is the inventor of the Falcon backbone relay.</li>
+												<li>He is a pioneer in on- and off-chain scaling.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="teamClick5" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+											<div class="imgs"><img src="img/Matt Chow_big.png">
+											</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">Andy Bromberg</span>
+											<span class="tt_bottom">Coinlist Co-founder</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>Co-founder & President at CoinList.</li>
+												<li>Founder of Sidewire, which has been heralded as the Twitter for politics and policy.</li>
+												<li>Founding research scientist at the Stanford Bitcoin Group.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="teamClick6" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+											<div class="imgs"><img src="img/Zhe Yang_big.png">
+											</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">Prof. Parteek Saxena</span>
+											<span class="tt_bottom">Singapore National Univeristy</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>Assistant Professor in the Computer Science Department at National University of Singapore.</li>
+												<li>Present research projects are on cryptocurrencies, trusted computing, binary analysis, and web security.</li>
+												<li>visited Microsoft Research Redmond during the summer of 2015.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="teamClick7" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+											<div class="imgs">
+												<img src="img/Yanpei Liu_big.jpg">
+											</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">Jehan Chu</span>
+											<span class="tt_bottom">Kenetic Founder</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>Advisor to Melonport, QTUM and OpenANX</li>
+												<li>Co-Chairman HK Fintech Association Blockchain Committee</li>
+												<li>Founder, Ethereum HK, Hyperledger community and Co-founder, Bitcoin Association HK</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="teamClick8" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+											<div class="imgs">
+												<img src="img/Chenxing Li_big.png">
+											</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">BeenHero</span>
+											<span class="tt_bottom">Imtoken Founder</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>Ethfans founder, early Ethereum community developer.</li>
+												<li>Founder imtoken in 2016focusing on smart contract and digital assets, imtoken has developed into the largest ethereum wallet, with users all over 200+ countries.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="teamClick9" class="teamClick">
+									<div class="close"><img src="img/close.png"></div>
+									<div class="teamClickLeft">
+											<div class="imgs">
+												<img src="img/Peilun Li_big.jpg">
+											</div>
+									</div>
+									<div class="teamClickRight">
+										<div class="tcr_top">
+											<span class="tt_top">Max Zhang</span>
+											<span class="tt_bottom">360 Director</span>
+										</div>
+										<div class="tcr_bottom">
+											<ul class="tcrb_ul">
+												<li>Investment director at innovation & development department of 360 (SH:601360).</li>
+												<li>Focus on internationalization, blockchain and other internal innovation.</li>
+												<li>Master of Finance, Bachelor of Science, Peking University.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+						
+								<div class="bc"></div>
 							</div>
 						</div>
 						<div class="window-bin" data-hash="four">
 							<div class="window-back swiper-lazy" data-title="4">
-								<div class="security">
-									<div class="sec_left">
-										<hr align="left" style="height:6px; width:50px;border:none;background:  #1a81ff;">
-										<h3>Security</h3>
-										<p>How to ensure the security of digital assets in smart contracts?</p>
+								<div class="join_banner_nav">
+									<img id="img0" src="img/votingBannerLogo.png" />
+									<img id="img1" src="img/votingBannerImg.png" />
+									<img id="img2" src="img/votingBanner.png" />
+								</div>
+						
+								<div class="join_content">
+									<div class="join_content_texts">
+										<div class="jct-title">About<span>IoTex-SG</span></div>
+										<div class="jct-text">As one of the biggest  IoTeX‘s investors and  close support partners , we are very optimistic about the development and future of IoTeX.It's a great honor to compete for the BP validator. We will work with our team to build a better and safer IOT platform and strive to build with strong scalability, privacy, isolatability and developability for incubating new IoT applications and ecosystems.</div>
 									</div>
-									<div class="sec_right">
-										<img src="img/Security_img.png">
-										<div class="sec_right_font">
-											<div class="font_left">
-												<p>◎ Fund frozen/stolen</p>
-												<p>◎ Infinite token generation</p>
-												<p>◎ Dapp model disruption</p>
-												<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……</p>
-											</div>
-											<div class="font_right">
-												<p>◎ Enforce total supply</p>
-												<p>◎ No integer overflow</p>
-												<p>◎ No backdoor</p>
-												<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……</p>
-											</div>
-										</div>
+						
+									<div class="join_content_texts">
+										<div class="jct-title">What is<label id="textClick">IoTex</label></div>
+										<div class="jct-text">IoTeX is a blockchain 3.0 platform for the Internet of things. The IoTeX blockchain not only allows for massive scalability, but it provides IoT device manufacturers and dApps developers with a full-featured blockchain framework, supporting instant transactions, full privacy, smart contracts, and lightweight cryptography for low power devices.</div>
+									</div>
+							
+									<div class="join_content_texts">
+										<div class="jct-title">Vote for<span>IoTex-SG</span></div>
+										<div class="jct-text">IOSG has been a cornerstone partner of the IoTex team since the team was setup.IOSG will continue support the network and bring more possibilities to the ecology of IoTex.IOSG has assembled a strong team to provide security and realiablity network service.Vote for us and build together!</div>
 									</div>
 								</div>
 							</div>
@@ -336,7 +788,7 @@
 										<ul id="ul_text">
 											<!--<li>
                                     <a href="">Home</a>
-                                </li>-->
+                                </li>
 											<li>
 												<a href="contact.html">Contact</a>
 											</li>
@@ -375,14 +827,30 @@
 
 							</div>
 
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 		<script src="js/index_sy.js"></script>
 		<script type="text/javascript">
+			// swiper初始化
+			var swiper = new Swiper('.swiper-container', {
+				loop: true,
+				initialSlide :0,
+        slidesPerView: 2,
+        spaceBetween: 30,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+        	clickable :true,
+				},
+      });
 			var footer_height = $(".footer").height();
 			$("#six2").css({
 				"height": footer_height,
@@ -453,6 +921,54 @@
 					})
 				}
 			});
+			
+			//PC端人员点击事件
+			$('.founder').on('click', (e) => {
+				let id = e.currentTarget.id.substring(4, e.currentTarget.id.length)
+				console.log(id,'id')
+				$('.bc').show()
+				$('#teamClick' + id).css({
+					display: 'flex'
+				})
+			})
+			//隐藏人员详情
+			$('.close,.bc').on('click', () => {
+				$('.bc').css({
+					display: 'none'
+				})
+				$('.teamClick').css({
+					display: 'none'
+				})
+			})
+
+			$(".head-rights").click(function() {
+				if($(this).hasClass("active")) {
+					$(this).removeClass("active");
+					$(".current").removeClass("active");
+					$(".zgt").hide();
+				} else {
+					$(this).addClass("active");
+					$(".current").addClass("active");
+					$(".zgt").show();
+				}
+
+			});
+			$(".zgt").click(function() {
+				if($(".head-rights").hasClass("active")) {
+					$(".head-rights").removeClass("active");
+					$(".current").removeClass("active");
+					$(".zgt").hide();
+				} else {
+					$(".head-rights").addClass("active");
+					$(".current").addClass("active");
+					$(".zgt").show();
+				}
+
+			})
+			$("#textClick").click(function() {
+				location.href = 'https://iotex.io'
+			})
+		
 		</script>
 	</body>
 
