@@ -162,7 +162,7 @@ li {
 .join_banner_nav {
 	clear: both;
 	width: 100%;
-	height: 250px;
+	height: 27%;
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -207,7 +207,8 @@ li {
 }
 
 .join_content {
-	margin-top: 30px;
+	margin-top: 3%;
+	height: 70%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
