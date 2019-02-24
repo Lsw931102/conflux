@@ -89,7 +89,7 @@
 				flex-wrap: wrap;
 				justify-content: space-between;
 				flex-wrap: wrap;
-				padding: 0 50px;
+				padding: 20px 50px;
 				box-sizing: border-box;
 			}
 			.profile{
@@ -131,12 +131,14 @@
         justify-content: center;
         align-items: center;
 				background-color: #fff;
-				/* margin-right: 2% !important;
-				width: 48% !important;
-				padding: 0 5px; */
+				/* margin-right: 10px !important; */
 			}
 			.swiper-slide img{
 				max-width: 100px;
+			}
+			.swiper-slide svg {
+				width: 150px !important;
+				height: 150px !important;
 			}
 		</style>
 	</head>
@@ -826,6 +828,7 @@
         	clickable :true,
 				},
       });
+
 			var footer_height = $(".footer").height();
 			$("#six2").css({
 				"height": footer_height,

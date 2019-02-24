@@ -166,6 +166,7 @@ li {
 	position: relative;
 	display: flex;
 	flex-direction: row;
+	margin-top: 25px;
 }
 
 .join_banner_nav #img0 {
@@ -207,7 +208,7 @@ li {
 }
 
 .join_content {
-	margin-top: 50px;
+	margin-top: 30px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -221,7 +222,7 @@ li {
 	justify-content: space-around;
 }
 .join_content_texts{
-	width: 25%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 }
@@ -232,7 +233,7 @@ li {
 	flex-direction: row;
 	justify-content: center;
 	color: #333;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 .jct-text{
