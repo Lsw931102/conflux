@@ -498,11 +498,14 @@ li {
 }
 .contact .inputs{
 	width: 100%;
-	height: 89%;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	background: url("../img/contactBack.jpg");
 	background-size: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 .inp{
 	display: flex;
@@ -563,9 +566,13 @@ li {
 	margin-bottom: auto;
 	display: inline-block;
 }
-#tuite,#fackbook{
-	width: 40px;
-	height: 40px;
+#tuite{
+	width: 56px;
+	height: 56px;
+}
+#fackbook{
+	width: 48px;
+	height: 48px;
 }
 #gongzhonghao{
 	margin: auto;
@@ -592,7 +599,7 @@ li {
 }
 .imgs{
 	width: 100%;
-	height: 11%;
+	height: 100px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -605,10 +612,14 @@ li {
 	height: 100px !important;
 	width: 300px !important;
 	margin-left: 0 !important;
+	color: #fff;
+	z-index: 1;
+	font-size: 80px;
 }
 .imgs_imgs{
 	display: flex;
 	flex-direction: row;
+	z-index: 1;
 }
 .contactBack{
 	width: 100%;
