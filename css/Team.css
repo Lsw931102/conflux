@@ -501,7 +501,14 @@ p, {
 	text-align: center;
 	display: none;
 }
-
+.bc_box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .bc {
 	width: 100%;
 	height: 100%;
@@ -519,9 +526,10 @@ p, {
 	height: 550px;
 	background: #fff;
 	z-index: 9;
-	position: fixed;
+	/* position: fixed;
 	left: 20%;
-	top: 220%;
+	top: 220%; */
+	position: relative;
 	display: none;
 	flex-direction: row;
 }
