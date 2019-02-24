@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
 		<link rel="stylesheet" href="css/Team.css" />
 		<link rel="stylesheet" href="css/Join Us.css" />
+		<link rel="stylesheet" href="css/contact.css" />
 		<style>
 			.window-head {
 				top: 87%;
@@ -751,7 +752,7 @@
 						
 								<div class="join_content">
 									<div class="join_content_texts">
-										<div class="jct-title">About<span>IoTex-SG</span></div>
+										<div class="jct-title">About<span>IoTex-SG(IOSG)</span></div>
 										<div class="jct-text">As one of the biggest  IoTeX‘s investors and  close support partners , we are very optimistic about the development and future of IoTeX.It's a great honor to compete for the BP validator. We will work with our team to build a better and safer IOT platform and strive to build with strong scalability, privacy, isolatability and developability for incubating new IoT applications and ecosystems.</div>
 									</div>
 						
@@ -761,7 +762,7 @@
 									</div>
 							
 									<div class="join_content_texts">
-										<div class="jct-title">Vote for<span>IoTex-SG</span></div>
+										<div class="jct-title">Vote for<span>IoTex-SG(IOSG)</span></div>
 										<div class="jct-text">IOSG has been a cornerstone partner of the IoTex team since the team was setup.IOSG will continue support the network and bring more possibilities to the ecology of IoTex.IOSG has assembled a strong team to provide security and realiablity network service.Vote for us and build together!</div>
 									</div>
 								</div>
@@ -769,66 +770,38 @@
 						</div>
 						<div class="window-bin" data-hash="five">
 							<div class="window-back swiper-lazy" data-title="5">
-								<div class="extensibility">
-									<div class="exten_top">
-										<hr align="center" style="height:6px; width:50px; margin:0;border:none;background:#1a81ff; display: inline-block;">
-										<h3>Extensibility</h3>
-										<p>How to bring information onto the chain?</p>
+								<div class="contact">
+									<div class="imgs">
+										<img class="contact_logo" src="img/logo.png" />
+										<div class="imgs_imgs">
+											<img id="erweima" src="img/erweima.png" />
+											<img id="tuite" src="img/tuite.png" />
+											<img id="fackbook" src="img/fackbook.png" />
+										</div>
 									</div>
-									<div class="exten_bottom">
-										<img src="img/Extensibility_img.png">
+									<div class="inputs">
+										<duv class="inp">
+											<div class="inputs-font">Contact</div>
+											<div class="inputs-input">
+												<input />
+												<div class="inputs-sub">Subscribe</div>
+											</div>
+										</duv>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="window-bin" data-hash="six" id="six2">
-
-							<div class="footer">
-								<p class="homebg"></p>
-								<div class="fot">
-									<div class="footer_left">
-										<ul id="ul_text">
-											<!--<li>
-                                    <a href="">Home</a>
-                                </li>
-											<li>
-												<a href="contact.html">Contact</a>
-											</li>
-											<li>
-												<a href="FAQs.html">FAQs</a>
-											</li>
-											<li>
-												<a href="Terms.html">Terms</a>
-											</li>
-										</ul>
-										<!--<ul id="ul_images">
-                                <li>
-                                    <a href=""><img src="img/Facebook.png"></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="img/Twitter.png"></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="img/in.png"></a>
-                                </li>
-                            </ul>-->
-										<p>Copyright©2018 Conflux. All Rights Reserved</p>
+						
+								<img id="gongzhonghao" src="img/gongzhonghao.jpg" />
+								<div id="bc"></div>
+								<div class="footers">
+										<p class="homebg"></p>
+										<div class="fot">
+											<div class="footer_left">
+												<ul id="ul_text">
+												<p>Copyright©2018 Conflux. All Rights Reserved</p>
+											</div>
+										</div>
 									</div>
-									<!--<div class="footer_right">
-                            <p>Stay updated on the latest digital trends</p>
-                            <div class="sign_up">
-                                <p class="jiesu">Thank you!</p>
-                                <form action="">
-                                    <input type="text" class="form_control" placeholder="Email">
-                                    <button class="btn_x"><img src="img/jiantou.png"></button>
-                                </form>
-                            </div>
-                        </div>-->
-
-								</div>
-
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -970,7 +943,21 @@
 			$("#textClick").click(function() {
 				location.href = 'https://iotex.io'
 			})
-		
+			$("#erweima").click(function() {
+				$('#gongzhonghao').css({display: 'block',})
+				$('#bc').css({display: 'block',})
+			})
+			$("#bc").click(function() {
+				$('#gongzhonghao').css({display: 'none',})
+				$('#bc').css({display: 'none',})
+			})
+			$("#tuite").click(function() {
+				location.href = 'https://twitter.com/LeehomLin'
+				location.href = 'https://www.linkedin.com/company/14480831/admin/'
+			})
+			$("#fackbook").click(function() {
+				location.href = 'https://www.linkedin.com/company/14480831/admin/'
+			})
 		</script>
 	</body>
 
