@@ -629,15 +629,11 @@ li {
 	top: 0;
 	z-index: 1;
 }
-.footers{
-	margin-top: -10%;
-}
 
-.footer {
-	clear: both;
+.footers {
+	position: absolute;
+	bottom: 0;
 	width: 100%;
-	margin: 0 auto 0 auto;
-	position: relative;
 }
 .homebg{
 	width: 100%;
