@@ -35,7 +35,7 @@
 			.window-head.active {
 				background: none;
 			}
-			
+			.visible-lg-block ul li:nth-child(2),
 			.visible-lg-block ul li:nth-child(3),
 			.visible-lg-block ul li:nth-child(4),
 			.visible-lg-block ul li:nth-child(5) {
@@ -46,9 +46,6 @@
 				display: none;
 			}
 			
-			.visible-lg-block ul li:nth-child(2) img {
-				width: 0.4rem;
-			}
 			#banner_h1{
 				opacity: 0;
 				animation:myfirst 1s;
@@ -144,19 +141,32 @@
 				position: absolute;
 				left: 6%;
 				top: 20%;
+				padding-top: 0;
 				z-index: 6;
 				color: #333;
+				font-size: 50px;
 			}
 			#banner_p{
 				width: 60%;
 				position: absolute;
 				left: 6%;
 				top: 36%;
+				margin-top: 0;
 				z-index: 6;
 				color: #333;
 			}
 			.top_href {
 				cursor: pointer;
+			}
+			.topFont{
+				width: 100%;
+				height: 70%;
+				margin: auto;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
 			}
 		</style>
 	</head>
@@ -178,32 +188,12 @@
 							<a class="top_href" href="#three">TEAM</a>
 						</li>
 						<li>
-							<a class="top_href" href="#four">IoTex Voting</a>
+							<a class="top_href" href="#four">IoTeX Voting</a>
 						</li>
 						<li>
 							<a class="top_href" href="#five">Contact</a>
 						</li>
-						<!-- <li>
-							<a href="FAQs.html">FAQs</a>
-						</li>
-						<li>
-							<a href="Terms.html">TERMS</a>
-						</li> -->
 					</ul>
-					<!--<ul>
-							<li>
-									<a href="#">English</a>
-							</li>
-							<li>
-									<a href="#">简体中文</a>
-							</li>
-							<li>
-									<a href="#">한국어</a>
-							</li>
-							<li>
-									<a href="join us.html">русский язык </a>
-							</li>
-					</ul>-->
 				</div>
 			</div>
 			</div>
@@ -212,14 +202,15 @@
 			<div class="main-box">
 				<div class="window-box">
 					<div class="window-cut">
-						<div class="window-bin" data-hash="first" id="first">
+						<div class="window-bin" data-hash="home" id="home">
+							<!-- 顶部导航动画 -->
 							<div class="window-head">
-								<div class="visible-lg-block">
-									<ul class="swiper-pagination-clickable swiper-pagination-bullets">
-
-									</ul>
+									<div class="visible-lg-block">
+										<ul class="swiper-pagination-clickable swiper-pagination-bullets">
+	
+										</ul>
+									</div>
 								</div>
-							</div>
 							<div class="window-back swiper-lazy" data-title="1">
 								<div class="banner">
 									<div class="nav">
@@ -229,28 +220,20 @@
 												<span class="head-rights"><img src="img/tab.png"/></span>
 											</div>
 											<div class="logo_content">
-												<h1 id="banner_h1">Building a new world，one token at a time</h1>
-												<P id="banner_p">IOSG Venture fund  invest in very-early-stage ventures, covering blockchain, cryptography, machine learning, fintech,and more. 
-
-														Our investment focus is centered around areas with strong growth potential and disruptive power, robust community and focused use-case. 
-														
+												<div class="topFont">
+													<h1 id="banner_h1">Building a new world，one token at a time</h1>
+													<P id="banner_p">
+														IOSG Venture fund  invest in very-early-stage ventures, covering blockchain, cryptography, machine learning, fintech,and more. <br />
+														Our investment focus is centered around areas with strong growth potential and disruptive power, robust community and focused use-case.  <br />
 														We are committed to promote the development of blockchain through investment.
-														</P>
-												<!--<div class="TP">
-                                  	<a href="Scaling Nakamoto Consensus to Thousands of Transactions per Second.html">TECHENICAL PRESENTATION →</a>
-                                  </div>-->
-												<!-- <div class="divbotton">
-													<label>TECHENICAL PRESENTATION</label>
-													<div class="divcircle">
-														<a href="Scaling Nakamoto Consensus to Thousands of Transactions per Second.html"><img src="img/arrow_right.png" /></a>
-													</div>
-												</div> -->
+													</P>
+												</div>
 
 											</div>
 
 										</div>
 										<div class="tab" style="margin: 0">
-											<p><img src="img/home_bg.png" /></p>
+											<!-- <p><img src="img/home_bg.png" /></p> -->
 											<ul class="tab_ul">
 												<li>
 													<a class="top_href">HOME</a>
@@ -262,45 +245,23 @@
 													<a class="top_href three">TEAM</a>
 												</li>
 												<li>
-													<a class="top_href four">IoTex Voting</a>
+													<a class="top_href four">IoTeX Voting</a>
 												</li>
 												<li>
 													<a class="top_href five">Contact</a>
 												</li>
-												<!--<li class="li_yuyan">
-                                    <div class="select">
-                                        <span><a href="javascript:void(0);">ENGLISH</a></span>
-                                        <div class="drop">
-                                            <ol>
-                                                <li>
-                                                    <a href="">ENGLISH</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">简体中文</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">俄语</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">韩语</a>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                    </div>
-
-                                </li>-->
 											</ul>
-											<!-- <div class="gif">
-												<img src="img/ban_img.gif">
-											</div> -->
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="window-bin" data-hash="two" id="two">
-							<div class="window-back swiper-lazy" data-title="<img src='img/mouse.png'>" style="display: flex;flex-direction: column;justify-content: center;">
+						<div class="window-bin" data-hash="Portfolio" id="Portfolio">
+							<div class="window-back swiper-lazy" data-title="2" style="display: flex;flex-direction: column;justify-content: center;">
 								<div class="join_content1">
+									<div class="team_banner">
+										<h3 style="padding-left:0;text-align: center;">Portfolio</h3>
+									</div>
 									<div class="profile">
 										<div class="titles">Stable Coin</div>
 										<div class="pro">
@@ -313,6 +274,8 @@
 															<img src="./img/portfolio/StableCoin/pic2.png"/>
 														</a>
 												</div>
+												<div class="swiper-button-prev"></div><!--左箭头-->
+												<div class="swiper-button-next"></div><!--右箭头-->
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
 											</div>
@@ -333,6 +296,8 @@
 														<img src="./img/portfolio/FinancialServices/pic3.png"/>
 													</a>
 												</div>
+												<div class="swiper-button-prev"></div><!--左箭头-->
+												<div class="swiper-button-next"></div><!--右箭头-->
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
 											</div>
@@ -368,6 +333,8 @@
 														<img src="./img/portfolio/ApplicationLayer/pic8.png"/>
 													</a>
 												</div>
+												<div class="swiper-button-prev"></div><!--左箭头-->
+												<div class="swiper-button-next"></div><!--右箭头-->
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
 											</div>
@@ -391,6 +358,8 @@
 														<img src="./img/portfolio/Exchange/pic4.png"/>
 													</a>
 												</div>
+												<div class="swiper-button-prev"></div><!--左箭头-->
+												<div class="swiper-button-next"></div><!--右箭头-->
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
 											</div>
@@ -423,6 +392,8 @@
 														<img src="./img/portfolio/ProtocolLayer/pic7.png"/>
 													</a>
 												</div>
+												<div class="swiper-button-prev"></div><!--左箭头-->
+												<div class="swiper-button-next"></div><!--右箭头-->
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
 											</div>
@@ -458,6 +429,8 @@
 														<img src="./img/portfolio/infrastructure/pic8.png"/>
 													</a>
 												</div>
+												<div class="swiper-button-prev"></div><!--左箭头-->
+												<div class="swiper-button-next"></div><!--右箭头-->
 												<!-- Add Pagination -->
 												<div class="swiper-pagination"></div>
 											</div>
@@ -466,11 +439,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="window-bin" data-hash="three" id="three">
+						<div class="window-bin" data-hash="team" id="team">
 							<div class="window-back swiper-lazy" data-title="3" style="display: flex;flex-direction: column;justify-content: center;">
 								<!-- 人物列表 -->
 								<div class="team_content">
-									<div class="titles">Core</div>
+									<div class="titles">Founding Team & Advisors</div>
 									<div id="team1" class="founder">
 										<div class="founder_left"><img src="img/Fan Long_small.png"></div>
 										<div class="founder_right">
@@ -479,14 +452,14 @@
 											<p>Fan Long, an Assistant Professor at University of Toronto. He graduated from Tsinghua University Yao Class, and he holds PhD of Computer Science from MIT. His research interests include systems security, programming language, and blockchain. He is a recipient of ACM SIGSOFT Outstanding Dissertation Award and MIT Best Dissertation Award. He has more than 20 publications on top computer science conferences with more than 1000 citations. He was also a competitive programmer. He won gold medals twice in International Olympiad of Informatics (2005, 2006), and ACM-ICPC Program Contest regional championship.</p>
 										</div>
 									</div>
-									<div id="team2" class="founder">
+									<!-- <div id="team2" class="founder">
 										<div class="founder_left"><img src="img/Andrew_small.jpg"></div>
 										<div class="founder_right">
 											<h3>Dr  Liang</h3>
 											<span>Co-Founder & Managing Director</span>
 											<p>Professor Yao is a world-renowned computer scientist. He is recipient of the Turing Award in 2000 for his fundamental contributions to the theory of computation, including the complexity-based theory of pseudorandom number generation, cryptography, and communication complexity. He is an academician of the Chinese Academy of Sciences, a foreign member of the US National Academy of Sciences. He is a Professor and Dean of the Institute for Interdisciplinary Information Sciences at Tsinghua University. Andrew is the Chief Scientist of the Conflux Chain Foundation and will lead the theoretical design of the Conflux protocol.</p>
 										</div>
-									</div>
+									</div> -->
 									<div id="team3" class="founder">
 										<div class="founder_left"><img src="img/Wei Xu_small.jpg"></div>
 										<div class="founder_right">
@@ -495,7 +468,7 @@
 											<p>Wei Xu, Assistant Professor and Assistant Dean of the Institute of Interdisciplinary Information Science(IIIS), Tsinghua University. He is also the Associate Dean of the Institute of Financial Technology of Tsinghua University and Director of the Blockchain Research Center. Professor Wei Xu’s research interests focus on cross-disciplinary research in distributed systems and machine learning. He obtained his Master and and Ph.D. degree in Computer Science from University of California, Berkeley. He was advised by Professor David Patterson, winner of the 2017 Turing Award. He holds a bachelor's degree in computer science from the University of Pennsylvania (he also spent two years in the Department of Computer Science at Tsinghua University). He has won Faculty Research Awards from Google and IBM, Graduate Student Advising Award and Top-Performance Employee Award from Tsinghua University, and Beijing Teaching Pioneer Award. He has published more than 40 papers in top conferences in systems, networks, machine learning, and optical communications, etc. He won the DSN, APSys Best Paper Award. Prior to joining Tsinghua, he worked at Google headquarters and was responsible for R&D in infrastructure reliability.</p>
 										</div>
 									</div>
-									<div class="titles">advisor</div>
+									<!-- <div class="titles">advisor</div> -->
 									<div id="team4" class="founder">
 										<div class="founder_left"><img src="img/Ming Wu_small.jpg"></div>
 										<div class="founder_right">
@@ -745,43 +718,48 @@
 							</div>
 							</div>
 						</div>
-						<div class="window-bin" data-hash="four" id="four">
+						<div class="window-bin" data-hash="IoTeXVoting" id="IoTeXVoting">
 							<div class="window-back swiper-lazy" data-title="4">
 								<div style="height: 100%">
 									<div class="join_banner_nav">
-										<img id="img0" src="img/votingBannerLogo.png" />
-										<div class="imgs_imgs">
-											<img id="erweima2" class="erweima" src="img/weixin.png" />
-											<img id="tuite" src="img/teite.png" />
-											<img id="fackbook" src="img/lingying.png" />
+										<div class="jbn_div">
+											<span class="jbnd_1">IoTeX-SG(IOSG) delegate</span>
+											<span class="jbnd_2">Join us and build together!<img id="telegeamIcon" src="img/telegeam.png"></span>
+											<button class="jbnd_3">Vote for us!</button>
+											<div class="voteDiv">
+												<div class="voteDivBc"></div>
+												<div class="voteDivText">
+													Thank you for supporting IOSG !<br /> 
+													The voting process for the election of Block Producers isn't open for now!<br />
+													Join our <a href="https://t.me/iosg_iotex">Telegram Group</a> if you have questions, and share your ideas with us.
+												</div>
+											</div>
 										</div>
 									</div>
-									<img id="gongzhonghao2" src="img/gongzhonghao.jpg" />
-									<div id="bc2"></div>
 									<div class="join_content">
 										<div class="join_content_texts">
-											<div class="jct-title">About<span>IoTex-SG(IOSG)</span></div>
-											<div class="jct-text">As one of the biggest  IoTeX‘s investors and  close support partners , we are very optimistic about the development and future of IoTeX.It's a great honor to compete for the BP validator. We will work with our team to build a better and safer IOT platform and strive to build with strong scalability, privacy, isolatability and developability for incubating new IoT applications and ecosystems.</div>
+											<div class="jct-title">About<span>IoTeX-SG(IOSG)</span></div>
+											<div class="jct-text">As one of the biggest  IoTeX‘s investors and  close support partners , we are very optimistic about the development and future of IoTeX.<br />It's a great honor to compete for the BP validator. We will work with our team to build a better and safer IOT platform and strive to build with strong scalability, privacy, isolatability and developability for incubating new IoT applications and ecosystems.</div>
 										</div>
 							
 										<div class="join_content_texts">
-											<div class="jct-title">What is<label id="textClick">IoTex</label></div>
-											<div class="jct-text">IoTeX is a blockchain 3.0 platform for the Internet of things. The IoTeX blockchain not only allows for massive scalability, but it provides IoT device manufacturers and dApps developers with a full-featured blockchain framework, supporting instant transactions, full privacy, smart contracts, and lightweight cryptography for low power devices.</div>
+											<div class="jct-title">What is<label style="color:blue" id="textClick">IoTeX</label></div>
+											<div class="jct-text">IoTeX is a blockchain 3.0 platform for the Internet of things.<br /> The IoTeX blockchain not only allows for massive scalability, but it provides IoT device manufacturers and dApps developers with a full-featured blockchain framework, supporting instant transactions, full privacy, smart contracts, and lightweight cryptography for low power devices.</div>
 										</div>
 								
 										<div class="join_content_texts">
-											<div class="jct-title">Vote for<span>IoTex-SG(IOSG)</span></div>
-											<div class="jct-text">IOSG has been a cornerstone partner of the IoTex team since the team was setup.IOSG will continue support the network and bring more possibilities to the ecology of IoTex.IOSG has assembled a strong team to provide security and realiablity network service.Vote for us and build together!</div>
+											<div class="jct-title">Vote for<span>IoTeX-SG(IOSG)</span></div>
+											<div class="jct-text">IOSG has been a cornerstone partner of the IoTeX team since the team was setup.<br />IOSG will continue support the network and bring more possibilities to the ecology of IoTeX.<br />IOSG has assembled a strong team to provide security and realiablity network service.<br />Vote for us and build together!</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="window-bin" data-hash="five" id="five">
+						<div class="window-bin" data-hash="contact" id="contact">
 							<div class="window-back swiper-lazy" data-title="5">
 								<div class="contact">
 									<div class="imgs">
-										<div class="contact_logo">IOSG</div>
+										<div class="contact_logo"> </div>
 										<div class="imgs_imgs">
 											<img id="erweima" class="erweima" src="img/weixin.png" />
 											<img id="tuite" src="img/teite.png" />
@@ -806,7 +784,7 @@
 										<div class="fot">
 											<div class="footer_left">
 												<ul id="ul_text">
-												<p>Copyright©2018 Conflux. All Rights Reserved</p>
+												<p>Copyright 2019 IOSG. All Rights Reserved</p>
 											</div>
 										</div>
 									</div>
@@ -822,6 +800,8 @@
 		<script type="text/javascript">
 			// swiper初始化
 			var swiper = new Swiper('.swiper-container', {
+				prevButton:'.swiper-button-prev',
+				nextButton:'.swiper-button-next',
 				loop: true,
 				autoplay : 3000,
         speed: 300,
@@ -829,7 +809,7 @@
         slidesPerView: 2,
         spaceBetween: 30,
 				pagination : '.swiper-pagination',
-				paginationClickable: true
+				paginationClickable: true,
       });
 			// a标签滑动到某个锚点动画效果
 			// $(".top_href").click(function () {
@@ -873,7 +853,6 @@
 			}, function() {
 				$(".drop").hide();
 			});
-			//点击跳到对应的图片
 			$('.two').click(function() {
 				$(".visible-lg-block ul li:nth-child(2)").click();
 			});
@@ -974,11 +953,21 @@
 				$('#bc2').css({display: 'none',})
 			})
 			$("#tuite").click(function() {
-				location.href = 'https://twitter.com/LeehomLin'
-				location.href = 'https://www.linkedin.com/company/14480831/admin/'
+				location.href = 'https://twitter.com/IOSGVC'
 			})
 			$("#fackbook").click(function() {
 				location.href = 'https://www.linkedin.com/company/14480831/admin/'
+			})
+			$("#telegeamIcon").click(function() {
+				location.href = 'https://t.me/iosg_iotex'
+			})
+			$(".jbnd_3").click(function() {
+				$('.voteDiv').css({display:'block'})
+				// location.href = 'https://t.me/iosg_iotex'
+			})
+			$(".voteDivBc").click(function() {
+				$('.voteDiv').css({display:'none'})
+				// location.href = 'https://t.me/iosg_iotex'
 			})
 		</script>
 	</body>
