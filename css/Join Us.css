@@ -162,60 +162,90 @@ li {
 .join_banner_nav {
 	clear: both;
 	width: 100%;
-	height: 27%;
+	height: 300px;
 	position: relative;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-  align-items: center;
-}
-.join_banner_nav .imgs_imgs {
-	margin-right: 50px;
-	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	overflow: hidden;
+	background: url(../img/keji.png) center center no-repeat;
+	background-size: 100%;
 }
-.join_banner_nav .imgs_imgs img {
+
+.join_banner_nav .jbn_div{
+	display: flex;
+	flex-direction: column;
+	padding: 0 50px;
+	box-sizing: border-box;
+	width: 100%;
+	color: #fff;
+}
+.jbnd_1,.jbnd_2{
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+#telegeamIcon{
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	margin-bottom: 5px;
 	cursor: pointer;
 }
-.join_banner_nav #img0 {
-	width: 20%;
-	height: auto;
-	height: 250px;
-	cursor: pointer;
+.jbnd_3{
+	width: 270px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 20px;
+	border-radius: 50px;
 }
-
-.join_banner_nav #img1 {
-	width: 20%;
-	height: auto;
-	position: absolute;
-	top: 0;
-	left: 20%;
-	height: 250px;
+.jbnd_3:hover{
+	background: #5599FF;
 }
-
-.join_banner_nav #img2 {
-	width: 80%;
-	height: auto;
-	height: 250px;
+.voteDiv{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 300%;
+	left: 0;
+	z-index: 3;
+	display: none;
 }
-.join_banner_nav img {
-	/* height: 100% !important; */
+.voteDivBc{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 300%;
+	background: #000415;
+	opacity: .8;
+	z-index: 8;
+	z-index: 2;
 }
-
-.join_banner h3 {
-	font-size: 0.8rem;
-	color: #FFFFFF;
-	text-align: center;
-	font-weight: bold;
-	font-family: helvetica-bold;
+.voteDivText{
+	font-size: 27px;
+	width: 700px;
+	height: 300px;
+	z-index: 3;
+	margin: auto;
+	position: fixed;
+	top: 330%;
+	left: 0;
+	right: 0;
+	padding: 30px 50px;
+	background: #fff;
+	border-radius: 10px;
+	color: #333;
 }
-
-.join_banner p {
-	font-size: 0.3rem;
-	color: #e7f2ff;
-	line-height: 0.5rem;
-	padding-top: 0.2rem;
-	text-align: center;
+.voteDivText a{
+	color: #5599FF;
 }
 
 .join_content {
@@ -269,7 +299,6 @@ li {
 }
 
 .jct-title span,.jct-title label{
-	color: #ff0000;
 	margin-left: 10px;
 	font-weight: bold;
 }
