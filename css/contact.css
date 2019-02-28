@@ -501,8 +501,8 @@ li {
 	height: 100%;
 	display: flex;
 	flex-direction: row;
-	background: url("../img/contactBack.png") no-repeat;
-	background-size: 110%;
+	background: url("../img/contactBack.jpg") no-repeat;
+	background-size: 100%;
 	background-position: center;
 	position: absolute;
 	left: 0;
